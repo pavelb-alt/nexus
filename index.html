@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="countdown.css">
+<link rel="stylesheet" href="countdown.css?v=sidebar">
 </head>
 <body>
 
@@ -43,7 +43,13 @@
       <span class="mag">⌕</span>
       <input id="search" placeholder="Search games" autocomplete="off">
     </div>
-    <div class="rail-scroll" id="rail"></div>
+    <div class="rail-scroll">
+      <div id="rail"></div>
+      <button class="countdown-button" id="countdownButton" type="button" aria-haspopup="dialog" aria-controls="countdownPopup">
+        PRESS ME
+        <small>30-SECOND TEST</small>
+      </button>
+    </div>
     <button class="rail-add">＋<span> Add a game</span></button>
   </aside>
 
@@ -66,11 +72,6 @@
 </div>
 
 <div class="toasts" id="toasts"></div>
-
-<button class="countdown-button" id="countdownButton" type="button" aria-haspopup="dialog" aria-controls="countdownPopup">
-  PRESS ME
-  <small>30-SECOND TEST</small>
-</button>
 
 <dialog class="countdown-popup" id="countdownPopup" aria-labelledby="countdownTitle" aria-describedby="countdownStatus">
   <h2 id="countdownTitle">30-second countdown</h2>

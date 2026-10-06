@@ -1,18 +1,15 @@
 /* Namespaced styles for the standalone test button and popup. */
 .countdown-button {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 50;
-  width: min(320px, 76vw, 64vh);
+  display: block;
+  width: min(180px, 100%);
+  margin: 16px auto 24px;
   aspect-ratio: 1;
   border: 8px solid #ff7373;
   border-radius: 50%;
   background: #df1010;
   color: #fff;
   box-shadow: 0 12px 0 #850606, 0 24px 64px #0009;
-  font: 800 clamp(24px, 5vw, 40px)/1.1 system-ui, sans-serif;
+  font: 800 24px/1.1 system-ui, sans-serif;
   text-align: center;
   letter-spacing: .02em;
 }
@@ -24,8 +21,20 @@
 }
 .countdown-button:hover { background: #c90d0d; }
 .countdown-button:active {
-  transform: translate(-50%, calc(-50% + 6px));
+  transform: translateY(6px);
   box-shadow: 0 6px 0 #850606, 0 18px 48px #0009;
+}
+@media (max-width: 900px) {
+  .countdown-button {
+    flex: none;
+    border-width: 3px;
+    font-size: 10px;
+  }
+  .countdown-button small {
+    margin-top: 4px;
+    font-size: 7px;
+    letter-spacing: 0;
+  }
 }
 .countdown-button:focus-visible,
 .countdown-close:focus-visible { outline: 4px solid #fff; outline-offset: 6px; }
