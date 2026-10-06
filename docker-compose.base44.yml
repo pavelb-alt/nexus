@@ -1,0 +1,21 @@
+services:
+  web:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    restart: on-failure
+    command:
+      - sh
+      - -ec
+      - |
+        pip install --no-cache-dir -r .base44/requirements.txt
+        exec python -u -c "from livereload import Server; server = Server(); [server.watch(path) for path in ('index.html', 'styles.css', 'app.js')]; server.serve(host='0.0.0.0', port=3000, root='.', open_url_delay=None)"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; r = urllib.request.urlopen('http://127.0.0.1:3000/', timeout=3); assert r.status == 200 and b'Nexus' in r.read()"]
+      interval: 15s
+      timeout: 5s
+      start_period: 45s
+      retries: 3
