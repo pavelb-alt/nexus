@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus — Game Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="logo"><span class="logo-mark">◈</span> NEXUS</div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-view="library">Library</button>
+    <button class="tab" data-view="store">Store</button>
+    <button class="tab" data-view="news">News</button>
+  </nav>
+
+  <div class="topbar-right">
+    <button class="tb-icon" id="giftBtn" title="Rewards">🎁</button>
+    <button class="tb-icon" id="bellBtn" title="Notifications">🔔<span class="badge">3</span></button>
+    <button class="tb-icon" id="friendsBtn" title="Toggle friends">👥</button>
+    <div class="me">
+      <div class="me-info">
+        <div class="me-name">PavelB</div>
+        <div class="me-tag">#2184</div>
+      </div>
+      <div class="me-av">PB<span class="status online"></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <!-- ============ GAME RAIL ============ -->
+  <aside class="rail">
+    <div class="rail-search">
+      <span class="mag">⌕</span>
+      <input id="search" placeholder="Search games" autocomplete="off">
+    </div>
+    <div class="rail-scroll" id="rail"></div>
+    <button class="rail-add">＋<span> Add a game</span></button>
+  </aside>
+
+  <!-- ============ STAGE ============ -->
+  <main class="stage" id="stage"></main>
+
+  <!-- ============ FRIENDS ============ -->
+  <aside class="social" id="social">
+    <div class="social-head">
+      <h3>Friends</h3>
+      <span class="count" id="friendCount"></span>
+    </div>
+    <div class="social-scroll" id="friends"></div>
+    <div class="social-foot">
+      <div class="me-av sm">PB<span class="status online"></span></div>
+      <div class="foot-txt"><strong>PavelB</strong><span>Online</span></div>
+      <button class="tb-icon sm" title="Settings">⚙</button>
+    </div>
+  </aside>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
