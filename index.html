@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="countdown.css">
 </head>
 <body>
 
@@ -66,6 +67,19 @@
 
 <div class="toasts" id="toasts"></div>
 
+<button class="countdown-button" id="countdownButton" type="button" aria-haspopup="dialog" aria-controls="countdownPopup">
+  PRESS ME
+  <small>30-SECOND TEST</small>
+</button>
+
+<dialog class="countdown-popup" id="countdownPopup" aria-labelledby="countdownTitle" aria-describedby="countdownStatus">
+  <h2 id="countdownTitle">30-second countdown</h2>
+  <output class="countdown-value" id="countdownValue" role="timer" aria-live="off" aria-label="Seconds remaining">30</output>
+  <p class="countdown-status" id="countdownStatus" role="status">Seconds remaining</p>
+  <button class="countdown-close" id="countdownClose" type="button" autofocus>Close</button>
+</dialog>
+
 <script src="app.js"></script>
+<script src="countdown.js"></script>
 </body>
 </html>
