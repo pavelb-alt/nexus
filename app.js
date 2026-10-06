@@ -37,7 +37,37 @@ const GAMES = [
   { id:'emberfall', name:'Ember', sub:'Fall', studio:'Cinder & Co.', genre:'Survival Craft',
     tag:'The sky is burning. Build, scavenge and survive the long winter that follows.',
     c:['#ea580c','#92400e','#2b1206'], glyph:'🔥', state:'install', playtime:0, last:'Never',
-    version:'0.9.1 EA', size:'31.5 GB', players:'74K', rating:'—' }
+    version:'0.9.1 EA', size:'31.5 GB', players:'74K', rating:'—' },
+
+  { id:'neondrift', name:'Neon', sub:'Drift', studio:'Afterglow Interactive', genre:'Arcade Racing',
+    tag:'Chase the perfect line through rain-soaked streets and neon skylines. The midnight circuit awaits.',
+    c:['#ec4899','#0891b2','#23103d'], glyph:'🏎', state:'install', playtime:0, last:'Never',
+    version:'2.1.0', size:'28.6 GB', players:'96K', rating:'88' },
+
+  { id:'frostbound', name:'Frostbound', sub:'Expedition', studio:'Northstar Games', genre:'Survival Adventure',
+    tag:'Lead an expedition beyond the frozen frontier. Shelter your crew and uncover what sleeps beneath the ice.',
+    c:['#38bdf8','#6366f1','#10233f'], glyph:'❄', state:'install', playtime:0, last:'Never',
+    version:'1.4.2', size:'36.2 GB', players:'52K', rating:'86' },
+
+  { id:'clockwork', name:'Clockwork', sub:'Rebellion', studio:'Brass Lantern', genre:'Roguelike',
+    tag:'Rewire your arsenal and battle through a mechanical city that rebuilds itself after every run.',
+    c:['#d97706','#be123c','#32150b'], glyph:'⚙', state:'install', playtime:0, last:'Never',
+    version:'1.2.5', size:'8.4 GB', players:'43K', rating:'91' },
+
+  { id:'tidelands', name:'Tidelands', sub:'New Horizons', studio:'Coral Cove Studio', genre:'Cozy Simulation',
+    tag:'Restore a seaside village, tend your island garden and sail toward a new discovery with every tide.',
+    c:['#14b8a6','#0284c7','#073b42'], glyph:'🌊', state:'install', playtime:0, last:'Never',
+    version:'1.6.0', size:'14.7 GB', players:'118K', rating:'90' },
+
+  { id:'voidrunner', name:'Voidrunner', sub:'Deep Space', studio:'Parallax Works', genre:'Space Exploration',
+    tag:'Chart forgotten star systems, upgrade your ship and follow a mysterious signal beyond known space.',
+    c:['#8b5cf6','#2563eb','#171039'], glyph:'🚀', state:'install', playtime:0, last:'Never',
+    version:'3.0.1', size:'57.3 GB', players:'132K', rating:'89' },
+
+  { id:'wildcrest', name:'Wildcrest', sub:'Kingdoms', studio:'Oak & Stone', genre:'City Builder',
+    tag:'Turn a woodland outpost into a thriving kingdom. Balance trade, nature and the needs of your people.',
+    c:['#65a30d','#0f766e','#152d14'], glyph:'🏰', state:'install', playtime:0, last:'Never',
+    version:'2.3.0', size:'22.9 GB', players:'67K', rating:'87' }
 ];
 
 const NEWS = [
