@@ -219,7 +219,7 @@ function paintButton(btn, prog, g) {
   }
 
   const modes = {
-    ready:   { cls:'',      label:'PLAY',    work:'Launching' },
+    ready:   { cls:'',      label:'START',    work:'Launching' },
     update:  { cls:'amber', label:'UPDATE',  work:'Updating'  },
     install: { cls:'green', label:'INSTALL', work:'Installing'}
   };
